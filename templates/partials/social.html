@@ -67,6 +67,10 @@
           <a href="https://www.buymeacoffee.com/{{ config.extra.buymeacoffee }}/" target="_blank" title="Buy Me A Coffee"><i type="Button" class="svg buymeacoffee" title="Buy Me A Coffee"></i></a>{% endif -%}
           {%- if config.extra.github_sponsor -%}
           <a href="https://github.com/sponsors/{{ config.extra.github_sponsor }}/" target="_blank" title="GitHub Sponsor"><i type="Button" class="svg github-sponsor" title="GitHub Sponsor"></i></a>{% endif -%}
+
+          {# we added globe here #}
+          {%- if config.extra.globe -%}
+          <a href="{{ config.extra.globe | safe }}" target="_blank" title="Links"><i type="Button" class="svg globe" title="Links"></i></a>{% endif -%}
       </div></nav>
 
 
